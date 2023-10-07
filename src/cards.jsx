@@ -11,8 +11,8 @@ import {
 
   function Cards ({image,title,description}){
     const navigate = useNavigate();
-    const toMoon = () => {
-      navigate("/Moon")
+    const travel = () => {
+      navigate("/Mars")
     }
 
     return(
@@ -28,7 +28,7 @@ import {
         <MDBCardText>
           {description}
         </MDBCardText>
-        <button  onClick={toMoon} type="button" class="btn btn-primary">CheckOut</button>
+        <button  onClick={travel} type="button" class="btn btn-primary">CheckOut</button>
       </MDBCardBody>
     </MDBCard>
     )
