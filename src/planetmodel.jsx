@@ -12,7 +12,7 @@ import {
   rasenganFragmentShader,
 } from "./lib/Shaders.js";
 
-export default function Marsmodel() {
+export default function PlanetModel({planetObj, planetTexture}) {
   useEffect(() => {
     //關閉fps偵測
     const test = new SceneInit("myThreeJsCanvas");
@@ -62,7 +62,7 @@ export default function Marsmodel() {
 
 //處理火星的obj 顏色
     
-    const texture = textureLoader.load('mars.jpg');
+    const texture = textureLoader.load(planetTexture);
     const material = new THREE.MeshBasicMaterial({ map: texture });
 
 
@@ -71,7 +71,7 @@ export default function Marsmodel() {
     const loader1 = new OBJLoader();
     // loader1.setMaterials(materials);
     loader1.load(
-      "./mars.obj",
+      planetObj,
       function (obj) {
         obj.traverse(function (child) {
           if (child instanceof THREE.Mesh) {

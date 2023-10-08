@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom';
-import Marsmodel from '../marsmodel';
+import PlanetModel from '../planetmodel';
 import * as THREE from "three";
 import { OBJLoader } from "three/examples/jsm/loaders/OBJLoader.js";
-function Moon() {
-    const moonContainerStyle = {
+function Planet({planetObj, planetTexture}) {
+    const planetContainerStyle = {
         width: '10%',      // 设置宽度
         height: '800px',   // 设置高度
         margin: '0 auto',  // 居中对齐
@@ -12,11 +12,14 @@ function Moon() {
 
     return (
         <div >
-            <div  className = 'container'style={moonContainerStyle}>
-                <Marsmodel />
+            <div  className = 'container'style={planetContainerStyle}>
+                <PlanetModel 
+                    planetObj={planetObj}
+                    planetTexture={planetTexture}
+                />
             </div>
             {/* 在这里添加其他内容 */}
         </div>
     )
 }
-export default Moon;
+export default Planet;
