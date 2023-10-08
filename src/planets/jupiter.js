@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Attraction from '../attraction';
 
-function Mars(){
+function Jupiter(){
     
       const SantaCruz = `
         NASA's Perseverance Mars rover snapped this view of a hill in Mars' Jezero Crater called "Santa Cruz" on April 29, 2021, the 68th Martian day, or sol, of the mission. About 20 inches (50 centimeters) across on average, the boulders in the foreground are among the type of rocks the rover team has named "Ch'al" (the Navajo term for "frog" and pronounced "chesh"). Perseverance will return to the area in the next week or so.
@@ -34,8 +34,8 @@ function Mars(){
         <div className='mask' style={{ backgroundColor: 'rgba(0, 0, 0, 0.6)' }}>
           <div className='d-flex justify-content-center align-items-center h-100'>
             <div className='text-white'>
-              <h1 className='mb-3'>Welcome to Mars!</h1>
-              <h4 className='mb-3'>Enjoy your trip</h4>
+              <h1 className='mb-3'>Welcome to Jupiter!</h1>
+              <h4 className='mb-3'>behold the greatness of this beatiful planet</h4>
             </div>
           </div>
         </div>
@@ -73,5 +73,5 @@ function Mars(){
     </div>
     )
 }
-export default Mars;
+export default Jupiter;
 

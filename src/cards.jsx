@@ -9,10 +9,10 @@ import {
   } from 'mdb-react-ui-kit';
   import { useNavigate } from 'react-router-dom';
 
-  function Cards ({image,title,description}){
+  function Cards ({image,title,description, travel}){
     const navigate = useNavigate();
-    const travel = () => {
-      navigate("/Mars")
+    const checkout = () => {
+      navigate('/Jupiter')
     }
 
     return(
@@ -28,7 +28,7 @@ import {
         <MDBCardText>
           {description}
         </MDBCardText>
-        <button  onClick={travel} type="button" class="btn btn-primary">CheckOut</button>
+        <button  onClick={checkout} type="button" class="btn btn-primary">CheckOut</button>
       </MDBCardBody>
     </MDBCard>
     )

@@ -32,9 +32,9 @@ function Home() {
     
       <div className='pt-3 pb-3' style={{ display: 'flex', justifyContent: 'space-between' }}>
         <Cards 
-          image = "https://images.unsplash.com/photo-1639382575211-e1959050f0fb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2080&q=80"
-          title="Moon"
-          description="Go to Moon"
+          image = "https://images.unsplash.com/photo-1639653279211-09958a51fb00?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2080&q=80"
+          title="Earth"
+          description="Go to Earth"
         />
         <Cards 
           image = "https://images.unsplash.com/photo-1639393455114-84df73f758cd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2080&q=80"
@@ -44,12 +44,14 @@ function Home() {
         <Cards 
           image = "https://images.unsplash.com/photo-1639477734993-44982980229e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2080&q=80"
           title="Jupiter"
-          description="Go to Jupiter  "
+          description="Go to Jupiter"
+          travel='/Jupiter'
         />
         <Cards 
           image = "https://images.unsplash.com/photo-1639477735279-c36dda1f7ebb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2080&q=80"
           title="Mars"
           description="Go to Mars"
+          travel="/Mars"
         />
       </div>
       <div className='pt-3 pb-3' style={{ display: 'flex', justifyContent: 'space-between' }}>
