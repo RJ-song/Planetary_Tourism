@@ -2,23 +2,17 @@ import { Link } from 'react-router-dom';
 import React, { useState } from "react";  
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Attraction from '../attraction';
+import Jupitermodel from '../jupitermodel';
 
 function Jupiter(){
     
-      const SantaCruz = `
-        NASA's Perseverance Mars rover snapped this view of a hill in Mars' Jezero Crater called "Santa Cruz" on April 29, 2021, the 68th Martian day, or sol, of the mission. About 20 inches (50 centimeters) across on average, the boulders in the foreground are among the type of rocks the rover team has named "Ch'al" (the Navajo term for "frog" and pronounced "chesh"). Perseverance will return to the area in the next week or so.
+      const moonShadow = `
+      An observer at Jupiter's cloud tops within the oval shadow would experience a total eclipse of the Sun. Total eclipses are more common on Jupiter than Earth for several reasons. Jupiter has four major moons (Galilean satellites) that often pass between Jupiter and the Sun: in seven days, Ganymede transits once; Europa, twice; and Io, four times. And since Jupiter's moons orbit in a plane close to Jupiter's orbital plane, the moon shadows are often cast upon the planet. `;
+      const Atmosphere = `This view of Jupiter's turbulent atmosphere from NASA's Juno spacecraft includes several of the planet's southern jet streams. Using data from Juno's instruments, scientists discovered that Jupiter's powerful atmospheric jet streams extend far deeper than previously imagined. Evidence from Juno shows the jet streams and belts penetrate about 1,800 miles (3,000 kilometers) down into the planet.
 
-        Composed of multiple images, this enhanced-color mosaic was created using the left- and right-eye views of Perseverance's Mastcam-Z camera system, merging the scene into a single, wider view. Santa Cruz hill is a possible eroded remnant of Jezero Crater's western delta. The hill is about 164 feet (50 meters) tall and was roughly 1.6 miles (2.5 kilometers) east of the rover when the photo was taken, viewed from "Van Zyl Overlook."
-      `;
-      const EosChasma = `This image shows a crater on the floor of Eos Chasma, part of the Valles Marineris canyon system. Craters on Mars are useful for geologists because they provide cross-sections into the subsurface. The south wall of this crater shows evidence of several different types of rock, with diverse colors.
-
-      In the black and white parts of the image, it appears that there are two types of rock: one relatively light and one dark. However, in the 1.1 kilometer-wide color swath we can see that the dark rocks are more complicated, as some have a greenish tint and others are purple.
-      
-      Note that these are not the colors your eyes would see if you were there! In enhanced color, the HiRISE near-infrared data appears as red, the red is shown as green, and the blue-green data is shown as blue, allowing us to see more information at once.`
+      The storm known as the Great Red Spot is also visible on the horizon, nearly rotated out of view as Juno sped away from Jupiter at about 30 miles per second (48 kilometers per second), which is more than 100,000 mph (160,900 kilometers per hour).`
       ;
-      const GedizVallis = `NASA's Curiosity Mars rover used its Mastcam to capture this mosaic of Gediz Vallis on Nov. 7, 2022, the 3,646th Martian day, or sol, of the mission. In the center of the valley in this image is a pile of boulders and debris that may have been swept there by flowing water billions of years ago.
-      Wind is thought to have carved the larger valley, which starts much higher up on Mount Sharp, the 3-mile-tall (5-kilometer-tall) Martian mountain whose foothills Curiosity has been ascending since 2014. The mountain is made up of layers, with the oldest at the bottom and the youngest at the top. Approaching this debris in the valley's interior channel is thought to be the only way that Curiosity will be able to study younger material that originated higher on the mountain than the rover will ever go
-  `;
+      const BA = `A JunoCam image of Jupiter's storm "Oval BA", taken on Juno's 26th perijove (PJ) pass, inspired this work of art, suitable for framing. Oval BA can be seen near the top of the image, a storm approximately the same size as Earth. The bright storm below and to the right of Oval BA is one of Jupiter's anticyclonic (counterclockwise-rotating) white ovals, common at this latitude, dubbed the string of pearls. `;
     return(
         <div>
       <header>
@@ -44,32 +38,34 @@ function Jupiter(){
     
     <div className="container" style={{ position: 'relative', overflow: 'hidden' }} >
     <Link className='pt-3 pb-3' to={"/"}  style={{ marginLeft: '85%' }}>Checkout Other Planets!</Link>
-    <h4 className='pb-4' style={{ borderBottom: '3px solid #000' }} >From Earth to Mars, we  </h4>
+    <h4 className='pb-4' style={{ borderBottom: '3px solid #000' }} >Jupiter  </h4>
            
     </div> 
       
     <Attraction
-        title="Gediz Vallis"
-        image="https://photojournal.jpl.nasa.gov/figures/PIA25733_figA_thumb.jpg"
-        description = {`${GedizVallis}`}
+        title="Oval BA"
+        image="https://photojournal.jpl.nasa.gov/jpegMod/PIA24292_modest.jpg"
+        description = {`${BA}`}
         audio = {process.env.PUBLIC_URL + '/audio/gediz.mp3'}
       />
 
       <Attraction
-        title="Santa Cruz"
-        image="https://photojournal.jpl.nasa.gov/browse/PIA25075.jpg"
-        description = {`${SantaCruz}`}
+        title="Jupiter's Atmosphere"
+        image="https://photojournal.jpl.nasa.gov/browse/PIA23809.jpg"
+        description = {`${Atmosphere}`}
         audio = {process.env.PUBLIC_URL + '/audio/santa.mp3'}
       />
 
       <Attraction
-        title="Eos Chasma"
-        image="https://photojournal.jpl.nasa.gov/browse/PIA25182.jpg"
-        description = {`${EosChasma}`}
+        title="Moon Shadow on Jupiter"
+        image="https://photojournal.jpl.nasa.gov/browse/PIA25015.jpg"
+        description = {`${moonShadow}`}
         audio={process.env.PUBLIC_URL + '/audio/eos.mp3'}
       />
        
-       
+       <div>
+            <Jupitermodel/>
+       </div>
     </div>
     )
 }
