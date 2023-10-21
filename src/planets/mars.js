@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import React, { useState } from "react";  
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Attraction from '../attraction';
+import Attraction from '../components/attraction';
 
 function Mars(){
     
@@ -44,7 +44,7 @@ function Mars(){
     
     <div className="container" style={{ position: 'relative', overflow: 'hidden' }} >
     <Link className='pt-3 pb-3' to={"/"}  style={{ marginLeft: '85%' }}>Checkout Other Planets!</Link>
-    <h4 className='pb-4' style={{ borderBottom: '3px solid #000' }} >From Earth to Mars, we  </h4>
+    <h4 className='pb-4' style={{ borderBottom: '3px solid #000' }} >Visit These Amazing Places On the Mars!   </h4>
            
     </div> 
       

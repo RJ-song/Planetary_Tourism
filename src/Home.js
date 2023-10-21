@@ -1,6 +1,5 @@
-import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Cards from './cards'
+import Cards from './components/cards'
 import { Link } from 'react-router-dom';
 
 function Home() {

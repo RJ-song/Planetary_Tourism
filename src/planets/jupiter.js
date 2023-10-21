@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
 import React, { useState } from "react";  
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Attraction from '../attraction';
-import Jupitermodel from '../jupitermodel';
+import Attraction from '../components/attraction';
+import Jupitermodel from '../models/jupitermodel';
 
 function Jupiter(){
     
@@ -62,8 +62,12 @@ function Jupiter(){
         description = {`${moonShadow}`}
         audio={process.env.PUBLIC_URL + '/audio/eos.mp3'}
       />
+
+      <div className='container pt-3'>
+          <h3>Jupiter Animation Demonstration</h3>
+      </div>
        
-       <div>
+       <div className='container pt-5'>
             <Jupitermodel/>
        </div>
     </div>

@@ -1,6 +1,6 @@
 import * as THREE from "three";
 import { OBJLoader } from "three/examples/jsm/loaders/OBJLoader.js";
-import SceneInit from './lib/SceneInit.js';
+import SceneInit from '../lib/SceneInit.js';
 import { useEffect } from "react";
 
 import {
@@ -10,9 +10,9 @@ import {
   sphereVertexShader,
   auraFragmentShader,
   rasenganFragmentShader,
-} from "./lib/Shaders.js";
+} from "../lib/Shaders.js";
 
-export default function Earthmodel() {
+export default function Uranusmodel() {
   useEffect(() => {
     //關閉fps偵測
     const test = new SceneInit("myThreeJsCanvas");
@@ -62,7 +62,7 @@ export default function Earthmodel() {
 
 //處理火星的obj 顏色
     
-    const texture = textureLoader.load('earth.jpg');
+    const texture = textureLoader.load('uranus.jpg');
     const material = new THREE.MeshBasicMaterial({ map: texture });
 
 

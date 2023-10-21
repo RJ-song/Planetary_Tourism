@@ -12,7 +12,7 @@ import {
   function Cards ({image,title,description, travel}){
     const navigate = useNavigate();
     const checkout = () => {
-      navigate('/Jupiter')
+      navigate('/Mars')
     }
 
     return(

@@ -1,6 +1,6 @@
 import * as THREE from "three";
 import { OBJLoader } from "three/examples/jsm/loaders/OBJLoader.js";
-import SceneInit from './lib/SceneInit.js';
+import SceneInit from '../lib/SceneInit.js';
 import { useEffect } from "react";
 
 import {
@@ -10,7 +10,7 @@ import {
   sphereVertexShader,
   auraFragmentShader,
   rasenganFragmentShader,
-} from "./lib/Shaders.js";
+} from "../lib/Shaders.js";
 
 export default function Marsmodel() {
   useEffect(() => {
