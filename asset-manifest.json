@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Planetary_Tourism/static/css/main.15f224d4.css",
-    "main.js": "/Planetary_Tourism/static/js/main.6500914b.js",
+    "main.css": "/Planetary_Tourism/static/css/main.eefc237f.css",
+    "main.js": "/Planetary_Tourism/static/js/main.31a3184d.js",
     "static/js/787.4d7b5c3f.chunk.js": "/Planetary_Tourism/static/js/787.4d7b5c3f.chunk.js",
     "index.html": "/Planetary_Tourism/index.html",
-    "main.15f224d4.css.map": "/Planetary_Tourism/static/css/main.15f224d4.css.map",
-    "main.6500914b.js.map": "/Planetary_Tourism/static/js/main.6500914b.js.map",
+    "main.eefc237f.css.map": "/Planetary_Tourism/static/css/main.eefc237f.css.map",
+    "main.31a3184d.js.map": "/Planetary_Tourism/static/js/main.31a3184d.js.map",
     "787.4d7b5c3f.chunk.js.map": "/Planetary_Tourism/static/js/787.4d7b5c3f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.15f224d4.css",
-    "static/js/main.6500914b.js"
+    "static/css/main.eefc237f.css",
+    "static/js/main.31a3184d.js"
   ]
 }
